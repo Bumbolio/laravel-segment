@@ -129,7 +129,7 @@ class SegmentService implements SegmentServiceContract
         $data = [
             'type' => $payload->type->value,
             'userId' => $payload->user->getSegmentIdentifier(),
-            'timestamp' => $payload->timestamp->format('Y-m-d\TH:i:s\Z'),
+            'timestamp' => $payload->timestamp->format('Y-m-d\TH:i:s.vp'),
         ];
 
         // This is important, Segment will not handle empty
